@@ -37,7 +37,14 @@
       <td><b>Project</b></td>
       <td><a href="/projects/<%= @part.project_id %>"><%= @part.project.name %></a></td>
     </tr>
-    <tr><td><b>Part Number</b></td><td><%= @part.full_part_number %></td></tr>
+    <tr>
+      <td><b>Part Number</b></td>
+      <% if @part.drawing_created == 1 %>
+      <td><a href="<%= @part.drawing_link %>" target="_blank"><%= @part.full_part_number %></a></td>
+      <% else %>
+      <td><%= @part.full_part_number %></td>
+      <% end %>
+    </tr>
     <tr>
       <td><b>Status</b></td>
       <td>
