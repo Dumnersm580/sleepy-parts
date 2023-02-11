@@ -1,5 +1,5 @@
 GIT
-  remote: git://github.com/Team254/cheesy-common.git
+  remote: https://github.com/Team254/cheesy-common.git
   revision: 3b67984fe653dba5ab79532dd69587de0a586928
   specs:
     cheesy-common (0.0.1)
@@ -77,4 +77,4 @@ RUBY VERSION
    ruby 2.3.0p0
 
 BUNDLED WITH
-   1.17.1
+   1.17.3

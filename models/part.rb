@@ -18,6 +18,8 @@ class Part < Sequel::Model
                  "rough" => "Ready for Rough Cutting",
                  "drawing" => "Needs drawing",
                  "ready" => "Ready to manufacture",
+                 "3d-pla" => "Ready to 3D Print (PLA)",
+                 "3d-markforge" => "Ready to 3D Print (MarkForge)",
                  "manufacturing" => "Manufacturing in progress",
                  "outsourced" => "Waiting for outsourced manufacturing",
                  "welding" => "Waiting for welding",
@@ -26,7 +28,8 @@ class Part < Sequel::Model
                  "powder" => "Ready for powder coating",
                  "coating" => "Waiting for coating",
                  "assembly" => "Waiting for assembly",
-                 "done" => "Done" }
+                 "done" => "Done",
+                 "obsolete" => "Obsolete" }
 
   # Mapping of priority integer stored in database to what is displayed to the user.
   PRIORITY_MAP = { 0 => "High", 1 => "Normal", 2 => "Low" }

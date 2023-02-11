@@ -3,7 +3,7 @@ source "https://rubygems.org"
 ruby "2.3.0"
 
 gem "activesupport"
-gem "cheesy-common", :github => "Team254/cheesy-common"
+gem "cheesy-common", git: "https://github.com/Team254/cheesy-common.git"
 gem "daemons"
 gem "dedent"
 gem "httparty"
