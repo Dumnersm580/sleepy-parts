@@ -1,3 +1,4 @@
+/* General Styles */
 label {
   font-weight: bold;
 }
@@ -6,6 +7,37 @@ label {
   cursor: default;
 }
 
+.dashboard-label {
+  padding: 2px 4px;
+  color: #ffffff;
+  border-radius: 5px;
+}
+
+.dashboard-part {
+  width: 115px;
+  height: 25px;
+  line-height: 25px;
+  text-align: center;
+  border: 1px solid black;
+  float: left;
+  margin: 3px;
+  font-weight: bold;
+  color: black;
+}
+
+.dashboard-status {
+  margin: 0 0 5px;
+}
+
+.table th a {
+  color: black;
+}
+
+li > h4 {
+  display: inline-block;
+}
+
+/* Status Labels */
 .label-status-designing {
   background-color: #38e;
 }
@@ -30,15 +62,10 @@ label {
   background-color: #bb0;
 }
 
-.label-status-ready {
-  background-color: #0bb;
-}
-
-.label-status-3d-pla {
-  background-color: #0bb;
-}
-
-.label-status-3d-markforge {
+.label-status-ready,
+.label-status-3d-pla,
+.label-status-3d-markforge,
+.label-status-open {
   background-color: #0bb;
 }
 
@@ -58,7 +85,8 @@ label {
   background-color: #796;
 }
 
-.label-status-anodize {
+.label-status-anodize,
+.label-status-obsolete {
   background-color: #000;
 }
 
@@ -70,51 +98,13 @@ label {
   background-color: brown;
 }
 
-.label-status-assembly {
-  background-color: #666;
-}
-
-.label-status-done {
-  background-color: #3d6;
-}
-
+.label-status-assembly,
+.label-status-done,
 .label-status-received {
   background-color: #3d6;
 }
 
-.label-status-open {
-  background-color: #0bb;
-}
-
-.label-status-obsolete {
-  background-color: #000;
-}
-
-.dashboard-label {
-  padding: 2px 4px;
-  color: #ffffff;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
-}
-
-.dashboard-part {
-  width: 115px;
-  height: 25px;
-  line-height: 25px;
-  text-align: center;
-  border: 1px solid black;
-  float: left;
-  margin: 3px;
-  font-weight: bold;
-  color: black;
-}
-
-.dashboard-status {
-  margin-top: 0;
-  margin-bottom: 5px;
-}
-
+/* Priorities */
 .priority-0 {
   background-color: #fa4;
 }
@@ -125,12 +115,4 @@ label {
 
 .priority-2 {
   background-color: #aaa;
-}
-
-.table th a {
-  color: black;
-}
-
-li>h4 {
-  display: inline-block;
 }
